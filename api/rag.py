@@ -7,10 +7,6 @@ from langchain_pinecone import PineconeVectorStore
 from api.config import CHAT_MODEL, SYSTEM_PROMPT, TOP_K, EMBEDDING_MODEL
 from langchain_openai import OpenAIEmbeddings
 
-os.environ["OPENAI_API_KEY"] = "sk-lO1-SW0nLvZiLqO7eI5-Jg"
-os.environ["OPENAI_BASE_URL"] = "https://api.llmod.ai/v1"
-os.environ["PINECONE_API_KEY"] = "pcsk_SmkCz_4Q2cedbHACYGAxf4ULUVQURyAVqw9D5T8oFSDneqP1ximmTtBtHeSS2te5NAWQx"
-
 
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
